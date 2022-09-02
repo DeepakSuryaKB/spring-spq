@@ -19,6 +19,7 @@ public class ProductController {
 
     @PostMapping("/addproducts")
     public List<Product> addProducts(@RequestBody List<Product> products){
+
         return  productService.saveProducts(products);
     }
 

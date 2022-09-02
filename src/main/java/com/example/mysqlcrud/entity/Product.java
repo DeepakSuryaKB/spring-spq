@@ -24,8 +24,8 @@ public class Product {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name ="pc_fid",referencedColumnName = "id")
     List<Reviews> reviews = new ArrayList<>();
-    @ManyToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "products")
-    List<Orders> orders = new ArrayList<>();
+    //@ManyToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "products")
+    //List<Orders> orders = new ArrayList<>();
 
 
 }

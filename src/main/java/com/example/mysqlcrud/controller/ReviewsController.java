@@ -23,8 +23,5 @@ public class ReviewsController {
         return this.reviewService.getAllReviews();
     }
 
-    @GetMapping("/productss")
-    public List<Product> findAllProducts(){
-        return productService.getProduct();
-    }
+
 }
